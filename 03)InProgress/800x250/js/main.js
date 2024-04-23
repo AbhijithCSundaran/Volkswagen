@@ -19,9 +19,6 @@ var globalTimeline = null;
 
 var disableHideDat = false;
 
-// var w = 800;
-// var h = 250;
-
 var initAd = function () {
   trace("initAd");
 
