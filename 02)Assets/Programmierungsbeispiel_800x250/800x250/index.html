@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="ad.size" content="width=800,height=250">
+
+<!--  <link href="http://fonts.cdnfonts.com/css/vw-head" rel="stylesheet">-->
+
+  <script type="text/javascript">
+    var clickTag = " ";
+  </script>
+
+
+  <style>
+
+		html, body 					{ padding: 0; margin: 0; overflow: hidden; background-color: #a0a0a0 }
+		img 						{ padding: 0; margin: 0; position: absolute; border: none; }
+		div 						{ padding: 0; margin: 0; position: absolute; display: block; }
+		svg 						{ padding: 0; margin: 0; position: absolute; display: block; }
+
+		.tk_v180924				    { left:   0;   top:   0;  width: 800px;  height: 250px; cursor: pointer; }
+
+		#container_ad				{ background-color: white; overflow: hidden; position: relative; }
+		#gfx_white					{ background-color: white; width: 800px;  height: 250px; }
+
+		.outline					{						  width: 800px;  height: 250px;  background: #000000; }
+		#outline_top				{ 									 	 height:   1px; }
+		#outline_left				{						   width:   1px; 				}
+		#outline_right				{ right:  0;			   width:   1px;				}
+		#outline_bottom				{			   bottom: 0;				 height:   1px; }
+
+		.hideElement 				{opacity: 0.0;}
+
+
+		.size {width: 800px; height: 250px; }
+		.sizeWhite {width: 184px; height: 250px; right: 0px }
+    .size_btn_info {width: 20px; height: 15px; }
+    .size_info_text {width: 800px; height: 600px; }
+    .disable {display: none }
+    #info_layer				{ width: 800px; height: 250px; background-color: black; opacity: 0.5;}
+
+    .font_regular {
+      font-family: Arial, Helvetica, sans-serif;
+      /*font-family: 'VW Head', sans-serif;*/
+      font-weight: normal;
+      color: black;
+    }
+    /*
+    @font-face {
+      font-family: 'vw_bold';
+      src: url('assets/VWTextWeb-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+    */
+    .font_bold {
+      font-family: Arial, Helvetica, sans-serif;
+      /*font-family: 'vw_bold', sans-serif;*/
+    }
+
+    .white {
+      /*color: white;*/
+      color: black;
+    }
+
+    .bg_white {
+      background-color: white;
+    }
+
+
+    .oh {
+      overflow: hidden;
+    }
+
+
+    #line_left    {left: 0; top: 178px; width: 215px }
+    #line_right    {right: 0; top: 178px; width: 17px }
+
+    #dealer_wrap_start    {top: 141px; left: 634px; width: 150px; height: 100px; background-color: transparent}
+
+    #html_vw_start {
+      font-size: 15px;
+      line-height: 19.8px;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      position: relative;
+    }
+
+    #html_dealer_headline_0_start {
+      font-size: 18px;
+      line-height: 19.8px;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      position: relative;
+    }
+
+    #dealer_wrap    {top: 65px; left: 21px; width: 260px; height: 100px; background-color: transparent}
+    /*#dealer_wrap    {top: 72px; left: 21px; width: 260px; height: 100px; background-color: transparent}*/
+
+    #html_dealer_headline_0 {
+      font-size: 18px;
+      line-height: 19.8px;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      position: relative;
+    }
+
+    #html_dealer_address_line_0 {
+      font-size: 18px;
+      line-height: 19.8px;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      position: relative;
+    }
+
+    #html_dealer_address_line_1 {
+      font-size: 18px;
+      line-height: 19.8px;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      position: relative;
+    }
+
+    #dat_pane {
+        width: 35px;
+        height: 20px;
+        right: 185px;
+        top: 0px;
+        /*background: aqua;*/
+    }
+
+    #close_pane {
+        width: 18px;
+        height: 18px;
+        right: 0px;
+        top: 0px;
+        /*background: green;*/
+        display: none
+    }
+
+    #html_legal_text{
+        left: 16px;
+        top: 16px;
+        width: 735px;
+        height: 214px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 11px;
+        color: black;
+    }
+
+	</style>
+
+</head>
+<body>
+
+<div id="container_ad" class="tk_v180924 hideElement disable">
+  <a href="javascript:void(window.open(window.clickTag));">
+    <div id="container_scale"							class="tk_v180924">
+
+      <img src="assets/bg.jpg" class="bg size" >
+
+
+      <div id="content" class="size">
+        <img src="assets/tf-0-0.png" class="size tf tf0">
+        <img src="assets/tf-0-1.png" class="size tf tf0">
+        <img src="assets/tf-1-0.png" class="size tf tf1">
+        <img src="assets/tf-disc.png" class="size tf-disc">
+
+        <img src="assets/stoerer.png" class="size stoerer">
+        <div class="bg_white sizeWhite disable"></div>
+
+        <img src="assets/logo.png" class="size logo hideElement">
+
+
+        <div id="dealer_wrap_start">
+          <div id="html_vw_start" class="font_regular">
+            Ihr Volkswagen Partner
+          </div>
+
+          <div id="html_dealer_headline_0_start" class="font_bold white">
+            TEST
+          </div>
+
+        </div>
+
+
+        <div class="bg bg_white size hideElement enable"></div>
+
+        <img src="assets/tf-2-0.png" class="size tf tf2">
+
+        <img src="assets/cta.png" class="size cta hideElement">
+
+
+        <div id="dealer_wrap">
+          <div id="html_dealer_headline_0" class="font_bold white tf tf2">
+            TEST
+          </div>
+
+          <div id="html_dealer_address_line_0" class="font_bold white tf tf2 ">
+            TEST
+          </div>
+
+          <div id="html_dealer_address_line_1" class="font_bold white tf tf2 ">
+            TEST
+          </div>
+        </div>
+
+      </div>
+      
+
+      <div id="overlay_info" class="size hideElement">
+        <img src="assets/gfx_white.png" class="bg size polite" >
+        <div id="html_legal_text">
+          TEST TEST TEST
+        </div>
+        <img src="assets/btn_close.png" id="btn_close" class="size" >
+      </div>
+  
+      <img src="assets/btn_info.png" id="btn_info" class="info size">
+
+
+      <div id="outline_top"								class="outline"></div>
+      <div id="outline_bottom"							class="outline"></div>
+      <div id="outline_left"								class="outline"></div>
+      <div id="outline_right"								class="outline"></div>
+
+    </div>
+  </a>
+
+  <div id="dat_pane"></div>
+  <div id="close_pane"></div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/greensock/1_20_3/TweenMax.min.js "></script>
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/sctVars.js"></script>
+
+<script type="text/javascript">
+  clickTag = sctContent._landingpage;
+</script>
+
+
+
+<!-- TKLC -->
+<script>
+	var tklib = {};
+	tklib.DISPLAY_NAME = "800x250";
+	tklib.ENV__TEST_HOSTS = ["localhost", "tmp5258.s3.amazonaws.com"];
+	tklib.traceEnabled = true;
+</script>
+
+<script src="assets/TKUT_v1.1.1.min.js"></script>
+
+<script>
+	var container_ad			= document.getElementById("container_ad");
+	var container_scale		= document.getElementById("container_scale");
+	var overlay_info			= document.getElementById("overlay_info");
+  var dat_pane					= document.getElementById("dat_pane");
+  var btn_info					= document.getElementById("btn_info");
+  var btn_close					= document.getElementById("btn_close");
+  var close_pane			  = document.getElementById("close_pane");
+	var content					  = document.getElementById("content");
+
+	var tf								= document.getElementsByClassName("tf");
+	var tf0								= document.getElementsByClassName("tf0");
+	var tf1								= document.getElementsByClassName("tf1");
+	var tf2								= document.getElementsByClassName("tf2");
+	var tfDisc						= document.getElementsByClassName("tf-disc");
+
+	var cta								= document.getElementsByClassName("cta");
+	var stoerer						= document.getElementsByClassName("stoerer");
+
+	var bg								= document.getElementsByClassName("bg");
+	var logo							= document.getElementsByClassName("logo");
+	var line							= document.getElementsByClassName("line");
+
+	var product							= document.getElementsByClassName("product");
+
+  function getStyle(el,styleProp) {
+    if (window.getComputedStyle) {
+      var y = document.defaultView.getComputedStyle(el,null).getPropertyValue(styleProp);
+    }
+    else if (el.currentStyle) {
+      var y = el.currentStyle[styleProp];
+    }
+    return y;
+  }
+
+  // var lineLeftWidth = parseInt(getStyle(line[0], "width"), 10);
+  // var lineRightWidth = parseInt(getStyle(line[1], "width"), 10);
+
+
+	TweenMax.set("img",				{rotation: 0.05, force3D: true});
+	TweenMax.set(".tl",				{transformOrigin: "0% 0%"});
+
+	var globalTimeline				= null;
+
+  var disableHideDat = false;
+
+	var w = 800;
+	var h = 250;
+
+	var initAd = function() {
+		trace("initAd");
+
+    var gtl = new TimelineMax({paused: true, onComplete: onLoop});
+		var cl = "";
+
+    gtl.addLabel("start", cl + "+=0.00"); cl = "start";
+    gtl.set(tf, {opacity: 0}, cl + "+=0");
+
+    gtl.set(cta, {opacity: 0, scale: 1, transformOrigin: "121px 187px"}, cl + "+=0.00");
+    gtl.set(stoerer, {x: 135, opacity: 0}, cl + "+=0.00");
+
+    gtl.addLabel("fadein", cl + "+=0.10");cl = "fadein";
+    gtl.to(logo, 0.0,  {opacity: 1, ease: Power1.easeOut}, cl + "+=0.0");
+    gtl.to(tfDisc, 0.3,  {opacity: 1, ease: Power1.easeOut}, cl + "+=0.2");
+
+    gtl.addLabel("phase1", cl + "+=0.5");cl = "phase1";
+    gtl.staggerTo(tf0, 0.3,  {opacity: 1, ease: Power1.easeOut},0.8, cl + "+=0.0");
+
+    gtl.addLabel("phase2", cl + "+=2.5");cl = "phase2";
+    gtl.staggerTo(tf0, 0.3,  {opacity: 0, ease: Power1.easeOut},0.0, cl + "+=0.0");
+    gtl.staggerTo(tf1, 0.3,  {opacity: 1, ease: Power1.easeOut},1.3, cl + "+=0.8");
+
+    gtl.addLabel("phase3", cl + "+=4.5");cl = "phase3";
+    gtl.to(stoerer, 0.5 , {opacity:1, x: 0 , ease: Power1.easeOut }, cl + "+=0.0");
+
+    gtl.addLabel("phase4", cl + "+=4.5");cl = "phase4";
+    gtl.to(bg[1], 1.0 , {opacity:1.0  , ease: Sine.easeOut }, cl + "+=0.00");
+    gtl.to(tfDisc, 1.0,  {opacity: 0, ease: Power1.easeOut}, cl + "+=0.0");
+    gtl.staggerTo(tf2, 0.3,  {opacity: 1, ease: Power1.easeOut},0.10, cl + "+=0.8");
+    gtl.to(cta, 0.3 , {opacity: 1.05, ease: Power1.easeInOut }, cl + "+=1.4");
+    gtl.to(cta, 0.2 , {scale: 1.05, repeat: 3, yoyo: true, ease: Power1.easeInOut }, cl + "+=2.4");
+
+    gtl.addLabel("fadeout",  cl + "+=6"); cl = "fadeout";
+    gtl.to(logo, 0.2,  {opacity: 0, ease: Power1.easeOut}, cl + "+=0.2");
+    gtl.to(cta, 0.2,  {opacity: 0, ease: Power1.easeOut}, cl + "+=0.1");
+    gtl.to(bg[1], 0.5,  {scale: 1.6, ease: Power1.easeOut}, cl + "+=0.0");
+
+    gtl.seek("fadein");
+
+		trace("animation length (one loop) ::: " + gtl.duration() + " ::: maxLoops ::: " + maxLoops);
+
+		globalTimeline = gtl;
+		gtl.timeScale(1);
+
+	};
+
+  function showDAT(e) {
+    if(e){
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    }
+    console.log("clicked");
+    TweenMax.to(overlay_info, 0.3, {opacity: 1, ease: Power2.easeOut});
+    TweenMax.to(content, 0.3, {opacity: 0, ease: Power2.easeIn});
+    TweenMax.to(btn_info, 0.3, {opacity: 0, ease: Power2.easeIn});
+    TweenMax.to(btn_close, 0.3, {opacity: 1, ease: Power2.easeIn});
+    close_pane.style.display = "block";
+
+  }
+
+  function hideDAT(e) {
+    if(e){
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    }
+
+    if(!disableHideDat){
+      TweenMax.to(overlay_info, 0.3, {opacity: 0, ease: Power2.easeIn});
+      TweenMax.to(btn_close, 0.3, {opacity: 0, ease: Power2.easeIn});
+      close_pane.style.display = "none";
+      TweenMax.to(content, 0.3, {opacity: 1, ease: Power2.easeOut});
+      TweenMax.to(btn_info, 0.3, {opacity: 1, ease: Power2.easeOut});
+    }
+
+  }
+  
+  function addListener() {
+    dat_pane.addEventListener("click", showDAT);
+    close_pane.addEventListener("click", hideDAT);
+  }
+
+	var maxLoops = 100;
+	var numLoops = 0;
+
+	var onLoop = function() {
+
+		if((numLoops == 1 && maxLoops == 1) || (maxLoops > 0 && numLoops > maxLoops)) {
+			return;
+		}
+
+		numLoops++;
+
+		trace("onLoop ::: loop " + numLoops + " of " + maxLoops);
+
+		if(maxLoops == -1 || numLoops < maxLoops) {
+			playFullLoop();
+		} else if(numLoops == maxLoops) {
+			playLastLoop();
+		}
+	};
+
+    function playFullLoop() {
+      trace("playFullLoop ::: timestamp: " + (new Date()).getTime());
+      showAd();
+      globalTimeline.play("fadein");
+      // globalTimeline.seek("fadeout");
+    }
+
+    function playLastLoop() {
+      trace("playLastLoop ::: timestamp: " + (new Date()).getTime());
+      showAd();
+      globalTimeline.tweenFromTo("fadein", "fadeout");
+    }
+
+
+  function showAd() {
+    TweenMax.set(container_ad, {display: "block"});
+    TweenMax.to(container_ad, 0.3, {opacity: 1});
+  }
+
+
+
+
+
+  function onClickExit() {
+      trace("exitClickHandler");
+      EB.clickthrough();
+  }
+
+  function handleSVData(data) {
+    document.getElementById("html_dealer_headline_0_start").innerHTML = adkit.getSVData("dc_dealer_headline_0");
+
+    document.getElementById("html_dealer_headline_0").innerHTML = adkit.getSVData("dc_dealer_headline_0");
+    document.getElementById("html_dealer_address_line_0").innerHTML = adkit.getSVData("dc_dealer_address_line_0");
+    document.getElementById("html_dealer_address_line_1").innerHTML = adkit.getSVData("dc_dealer_address_line_1");
+
+  }
+
+
+  function onWindowLoaded() {
+    //trace("onWindowLoaded");
+    //container_ad.addEventListener("click", onClickExit);
+    //handleSVData();
+    addListener();
+    initAd();
+    sctData();
+    onLoop();
+  }
+
+window.onload = onWindowLoaded;
+
+
+//   function initAdKit() {
+//       adkit.onReady(onWindowLoaded);
+//   }
+//
+// window.onload = initAdKit;
+
+
+</script>
+</body>
+</html>
