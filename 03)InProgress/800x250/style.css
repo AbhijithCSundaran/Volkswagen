@@ -136,10 +136,10 @@ img {
 
 
 #dealer_wrap_start {
-    top: 139px;
+    bottom: 11px;
     right: 21px;
     width: 145px;
-    height: 100px;
+    height: auto;
     background-color: transparent
 }
 
