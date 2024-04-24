@@ -1,8 +1,8 @@
-/*
-Die	Funktion sctData()	sollte	nach	der	Initialisierung	des	HTML5-Banners	aufgerufen	werden.	Diese
-Funktion	�bertr�gt	die	Werte	aus	dem	Content	Object	auf	die	Tags	im	HTML5-Banner.	Im	Google
-Web	Designer	steht	dazu zum	Beispiel	die	Funktion	handleDomContentLoaded zur	Verf�gung:
-*/
+
+// Die	Funktion sctData()	sollte	nach	der	Initialisierung	des	HTML5-Banners	aufgerufen	werden.	Diese
+// Funktion	�bertr�gt	die	Werte	aus	dem	Content	Object	auf	die	Tags	im	HTML5-Banner.	Im	Google
+// Web	Designer	steht	dazu zum	Beispiel	die	Funktion	handleDomContentLoaded zur	Verf�gung:
+
 
 function sctData(params) {
     //	Wenn	Werte	nicht	als	Funktionsparameter	uebergeben	werden,
@@ -37,6 +37,7 @@ function sctData(params) {
 }
 
 function fillRepetiveContent(){
+    document.getElementById("html_vw_start").innerHTML = html_vw.innerHTML;
     document.getElementById("html_dealer_headline_0_start").innerHTML = html_dealer_headline_0.innerHTML;
 }
 
