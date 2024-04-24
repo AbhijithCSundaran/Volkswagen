@@ -19,6 +19,9 @@ var globalTimeline = null;
 
 var disableHideDat = false;
 
+var maxLoops = 100;
+var numLoops = 0;
+
 var initAd = function () {
   trace("initAd");
 
@@ -107,9 +110,6 @@ function addListener() {
   dat_pane.addEventListener("click", showDAT);
   close_pane.addEventListener("click", hideDAT);
 }
-
-var maxLoops = 100;
-var numLoops = 0;
 
 var onLoop = function () {
 
