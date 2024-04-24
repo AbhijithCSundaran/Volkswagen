@@ -27,7 +27,7 @@ img {
 }
 
 .size {
-    width: 800px;
+    width: 970px;
     height: 250px;
 }
 
@@ -116,7 +116,7 @@ img {
 
 
 #dealer_wrap_start {
-    bottom: 11px;
+    bottom: 14px;
     right: 21px;
     width: 145px;
     height: auto;
@@ -133,12 +133,13 @@ img {
 }
 
 #html_dealer_headline_0_start {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 19px;
     letter-spacing: 0px;
     padding-top: 0;
     padding-left: 0;
+    margin-top: 22px;
     color: #e50477;
     position: relative;
 }
@@ -146,7 +147,7 @@ img {
 #dealer_wrap {
     top: 33px;
     left: 24px;
-    width: 260px;
+    width: 250px;
     height: auto;
     background-color: transparent
 }
@@ -163,8 +164,8 @@ img {
 #html_dealer_address_line_1 {
     font-size: 17px;
     font-weight: 600;
-    line-height: 18.5px;
-    letter-spacing: 0;
+    line-height: 19px;
+    letter-spacing: -0.5px;
     color: #e50477;
     padding-top: 0;
     padding-left: 0;
