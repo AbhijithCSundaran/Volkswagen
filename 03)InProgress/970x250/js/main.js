@@ -21,7 +21,7 @@ var disableHideDat = false;
 
 var maxLoops = 100;
 var numLoops = 0;
-maxLoops = 2;
+// maxLoops = 2;
 
 var initAd = function () {
   trace("initAd");
@@ -65,8 +65,8 @@ var initAd = function () {
   gtl.to(cta, 0.3, { opacity: 1.0, ease: Power1.easeInOut }, cl + "+=1.4");
   gtl.to(cta, 0.2, { scale: 1.03, repeat: 3, yoyo: true, ease: Power1.easeInOut }, cl + "+=2.4");
 
-  // gtl.addLabel("fadeout", cl + "+=6.5"); cl = "fadeout";
-  // gtl.to(cta, 0.2, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.1");
+  gtl.addLabel("fadeout", cl + "+=6.5"); cl = "fadeout";
+  gtl.to(cta, 0.2, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.1");
 
   gtl.seek("fadein");
 
