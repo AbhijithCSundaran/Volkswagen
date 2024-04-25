@@ -21,7 +21,7 @@ var disableHideDat = false;
 
 var maxLoops = 100;
 var numLoops = 0;
-maxLoops = 2;
+// maxLoops = 2;
 
 var initAd = function () {
   trace("initAd");
