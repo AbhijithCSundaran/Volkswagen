@@ -44,11 +44,11 @@ img {
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     z-index: 9;
-    right: 16px;
-    bottom: 98px;
+    right: 24px;
+    top: 24px;
 }
 
 /* .logo::before,
@@ -95,10 +95,10 @@ img {
 }
 
 #btn_close {
-    width: 10px;
-    height: 10px;
-    top: 4px;
-    right: 4px;
+    width: 18px;
+    height: 18px;
+    bottom: 0px;
+    right: 0px;
 }
 
 .font_regular {
@@ -113,63 +113,8 @@ img {
     background-color: white;
 }
 
-
-#dealer_wrap_start {
-    bottom: 0px;
-    right: 10px;
-    left: 6px;
-    padding: 11px;
-    height: auto;
-    background-color: transparent
-}
-
-#html_vw_start {
-    font-size: 15px;
-    line-height: 1;
-    letter-spacing: 0;
-    padding-top: 0;
-    padding-left: 0;
-    position: relative;
-}
-
-#html_dealer_headline_0_start {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.21;
-    letter-spacing: 0.5px;
-    padding-top: 0;
-    padding-left: 0;
-    margin-top: 1px;
-    color: #e50477;
-    position: relative;
-}
-
-#dealer_wrap {
-    top: 36px;
-    left: 22px;
-    width: 230px;
-    height: auto;
-    background-color: transparent
-}
-
-
-#html_vw {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    margin-bottom: 21px;
-}
-
-#html_dealer_headline_0,
-#html_dealer_address_line_0,
-#html_dealer_address_line_1 {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: 1.15px;
-    color: #e50477;
-    padding-top: 0;
-    padding-left: 0;
-    position: relative;
+.bg_black {
+    background-color: black;
 }
 
 #dat_pane {
@@ -194,12 +139,12 @@ img {
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 16px 17px;
+    padding: 24px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 11px;
-    letter-spacing: -0.2px;
-    line-height: 1.1;
+    font-size: 7.5px;
+    letter-spacing: 0.175px;
+    line-height: 1.42;
 }
 
 #html_legal_text sup {

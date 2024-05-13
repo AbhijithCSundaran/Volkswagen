@@ -32,25 +32,13 @@ var initAd = function () {
   gtl.addLabel("start", cl + "+=0.00"); cl = "start";
   gtl.set('.tf', { opacity: 0 }, cl + "+=0");
 
-  gtl.set(cta, { opacity: 0, scale: 1, transformOrigin: "121px 187px" }, cl + "+=0.00");
-  // gtl.set('.stoerer', { x: 135, opacity: 0 }, cl + "+=0.00");
-
   gtl.addLabel("fadein", cl + "+=0.10"); cl = "fadein";
   gtl.to('.logo', 0.0, { opacity: 1, ease: Power1.easeOut }, cl + "+=0.0");
-  gtl.to('.tf-disc', 0.3, { opacity: 1, ease: Power1.easeOut }, cl + "+=0.2");
 
   gtl.addLabel("phase1", cl + "+=0.5"); cl = "phase1";
   gtl.staggerTo('.tf0', 0.3, { opacity: 1, ease: Power1.easeOut }, 0.8, cl + "+=0.0");
 
-  gtl.addLabel("phase2", cl + "+=2.5"); cl = "phase2";
-  gtl.staggerTo('.tf0', 0.3, { opacity: 0, ease: Power1.easeOut }, 0.0, cl + "+=0.0");
-  gtl.staggerTo('.tf1', 0.3, { opacity: 1, ease: Power1.easeOut }, 1.3, cl + "+=0.8");
-
-  // // gtl.addLabel("phase3", cl + "+=4.5"); cl = "phase3";
-  // // gtl.to('.stoerer', 0.5, { opacity: 1, x: 0, ease: Power1.easeOut }, cl + "+=0.0");
-
-  gtl.addLabel("phase3", cl + "+=4.5"); cl = "phase3";
-  gtl.to(dealer_wrap_start, 0.3, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.0");
+  gtl.addLabel("phase2", cl + "+=3"); cl = "phase2";
   gtl.to(btn_info, 0.3, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.0");
   gtl.to(bgImg, 0.3, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.0");
   gtl.to('.tf', 0.3, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.0");
@@ -58,15 +46,9 @@ var initAd = function () {
   gtl.to(overlay_info, 1.0, { opacity: 1.0, ease: Sine.easeOut }, cl + "+=0.00");
   gtl.to(html_legal_text, 0.2, { opacity: 1.0, ease: Power1.easeInOut }, cl + "+=1.00");
 
-  gtl.addLabel("phase4", cl + "+=5.7"); cl = "phase4";
-  gtl.to(overlay_info, 0.3, { opacity: 0.0, ease: Sine.easeOut }, cl + "+=0.00");
-  gtl.to(dealer_wrap, 0.3, { opacity: 1.0, ease: Sine.easeOut }, cl + "+=0.00");
-  gtl.staggerTo('.tf2', 0.3, { opacity: 1, ease: Power1.easeOut }, 0.10, cl + "+=1.0");
-  gtl.to(cta, 0.3, { opacity: 1.0, ease: Power1.easeInOut }, cl + "+=1.4");
-  gtl.to(cta, 0.2, { scale: 1.03, repeat: 3, yoyo: true, ease: Power1.easeInOut }, cl + "+=2.4");
 
-  gtl.addLabel("fadeout", cl + "+=6.5"); cl = "fadeout";
-  gtl.to(cta, 0.2, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.1");
+  gtl.addLabel("fadeout", cl + "+=6"); cl = "fadeout";
+  gtl.to(html_legal_text, 0.5, { opacity: 0, ease: Power1.easeOut }, cl + "+=0.1");
 
   gtl.seek("fadein");
 
